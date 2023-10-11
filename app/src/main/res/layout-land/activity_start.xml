@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FEF3DC"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#FEF3DC"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/faster_one"
+            android:gravity="center_horizontal"
+            android:text="Puzzle 15"
+            android:textColor="#F9A310"
+            android:textSize="40sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/start"
+            android:layout_width="180sp"
+            android:layout_height="56sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/buttontwo"
+            android:text="Start"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/about"
+            android:layout_width="180sp"
+            android:layout_height="56sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/buttontwo"
+            android:text="About"
+            android:textColor="@color/white" />
+
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:id="@+id/settings"-->
+        <!--            android:layout_width="150dp"-->
+        <!--            android:layout_height="56dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:background="@drawable/buttontwo"-->
+        <!--            android:text="Settings"-->
+        <!--            android:textColor="@color/white" />-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exit"
+            android:layout_width="180sp"
+            android:layout_height="56sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/buttontwo"
+            android:text="Exit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginLeft="500sp"
+        android:layout_marginTop="200sp"
+        android:src="@drawable/ayiq" />
+
+    <ImageView
+        android:id="@+id/musicon"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/music1"
+        tools:ignore="RtlHardcoded" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/musicof"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_gravity="right"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_marginRight="10dp"-->
+    <!--        android:background="@drawable/microphoneoff"-->
+    <!--        tools:ignore="RtlHardcoded" />-->
+</FrameLayout>

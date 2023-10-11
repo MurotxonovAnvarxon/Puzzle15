@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF3DC"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/faster_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40sp"
+        android:text="Puzzle 15"
+        android:textColor="#F9A310"
+        android:textSize="40sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start"
+        android:layout_marginTop="200sp"
+        android:layout_width="180sp"
+        android:layout_height="56sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:background="@drawable/buttontwo"
+        android:foreground="?android:selectableItemBackground"
+        android:text="Start"
+        android:textColor="@color/white" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about"
+        android:layout_marginTop="20sp"
+        android:layout_width="180sp"
+        android:layout_height="56sp"
+        android:layout_gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start"
+        android:background="@drawable/buttontwo"
+        android:text="About"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exit"
+        android:layout_width="180sp"
+        android:layout_height="56sp"
+        android:layout_gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/buttontwo"
+        android:text="Exit"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+       app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exit"
+        android:src="@drawable/ayiq" />
+
+    <ImageView
+        android:id="@+id/musicon"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text"
+        app:layout_constraintLeft_toRightOf="@id/text"
+        android:background="@drawable/music1"
+        tools:ignore="RtlHardcoded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

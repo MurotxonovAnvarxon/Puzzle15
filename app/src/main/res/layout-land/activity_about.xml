@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF3DC"
+    tools:context=".activity.AboutActivity">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/faster_one"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="Puzzle 15"
+                android:textColor="#F9A310"
+                android:textSize="40sp" />
+
+            <ScrollView
+                android:id="@+id/scrol"
+                app:layout_constraintTop_toBottomOf="@id/text"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="15 boshqotirma oʻyini 4x4 panjarada oʻynaladigan klassik toymasin boshqotirma oʻyini. O'yinning maqsadi raqamlarni o'sish tartibida chapdan o'ngga va yuqoridan pastga, pastki o'ng burchakda bo'sh joy qoldirishdir. Mana qoidalar:\n1. O'yin 15 ta raqamlangan plitka va bitta bo'sh joydan iborat 4x4 panjaradan iborat.
+\n2. Plitkalar dastlab tasodifiy aralashtiriladi.
+\n3. Agar u bo'sh joyga yondosh bo'lsa (gorizontal yoki vertikal) bo'sh joyga plitka surishingiz mumkin.
+\n4. Plitkani siljitish uchun ustiga bosing. Plitka bo'sh joyga siljiydi.
+\n5. Bo'sh joy avval kafel egallagan joyni egallaydi.
+\n6. Maqsad - plitkalarni o'sish tartibida chapdan o'ngga va yuqoridan pastga, pastki o'ng burchakdagi bo'sh joy bilan joylashtirish.
+\n7. Barcha plitkalar to'g'ri tartibda joylashtirilganda siz o'yinda g'alaba qozonasiz.\n\nEslatma: dastur GITA dasturchilar akademiyasi o'quvchisi Murotxonov Anvarxon tomonidan yaratildi." />
+            </ScrollView>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/finish1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttontwo"
+                android:text="Back"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scrol"
+                android:layout_margin="40sp"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
